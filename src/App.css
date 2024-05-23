@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Segoe";
+  font-weight: 200;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplayExtralight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe";
+  font-weight: 300;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplayLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe";
+  font-weight: 400;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplayRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe";
+  font-weight: 500;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplayMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe";
+  font-weight: 600;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplaySemibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe";
+  font-weight: 700;
+  src: local("Segoe"),
+    url("/fonts/ClashDisplayBold.otf") format("opentype");
+}
