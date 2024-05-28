@@ -1,0 +1,67 @@
+.FooterCard {
+  flex: 1 1 0%;
+  margin-bottom: 3rem /* 48px */;
+  align-self: center;
+  padding: 1.25rem /* 20px */;
+  background-color: rgb(251 245 255);
+  border-radius: 1rem /* 16px */;
+  box-shadow: 4px 8px 24px 0px rgba(52, 17, 90, 0.05);
+}
+
+.FooterLinkTowerTitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem /* 16px */;
+  line-height: 2rem /* 32px */;
+}
+
+.FooterLinkTitle {
+  white-space: nowrap;
+  font-size: 16px;
+  text-decoration-line: underline;
+  font-weight: 400;
+  line-height: 2rem /* 32px */;
+  color: white;
+}
+
+.SocialMediaLink {
+  box-shadow: 4px 8px 24px 0px rgba(52, 17, 90, 0.05);
+  background-color: rgb(251 245 255);
+  border-radius: 8px;
+}
+
+.SocialMediaImage {
+  filter: invert(18%) sepia(34%) saturate(5369%) hue-rotate(258deg)
+    brightness(87%) contrast(88%);
+  width: 1.5rem /* 24px */;
+  height: 1.5rem /* 24px */;
+  padding: 0.25rem /* 4px */;
+}
+
+@media (min-width: 768px) {
+  .FooterLinkTowerTitle {
+    font-size: 22px;
+    margin-bottom: 1.5rem /* 24px */;
+  }
+
+  .FooterLinkTitle {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .FooterCard {
+    margin-bottom: 0;
+  }
+
+  .SocialMediaImage {
+    padding: 0.5rem /* 8px */;
+  }
+}
+
+@media (min-width: 1400px) {
+  .FooterCard {
+    padding: 2.25rem /* 36px */;
+  }
+}
