@@ -1,15 +1,13 @@
 import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
-    <div className='text-[5rem] font-segoe flex flex-col'>
-      <span className='font-extralight'>Testing font weight</span>
-      <span className='font-light'>Testing font weight</span>
-      <span className='font-normal'>Testing font weight</span>
-      <span className='font-medium'>Testing font weight</span>
-      <span className='font-semibold'>Testing font weight</span>
-      <span className='font-bold'>Testing font weight</span>
+    <div className='mx-[4.5%] font-segoe'>
+      <Header />
+      <Hero />
     </div>
   )
 }
