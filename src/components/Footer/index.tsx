@@ -42,7 +42,7 @@ const opportunities: LinkProps[] = [
   {
     key: "ambassadors",
     text: "Ambassadors",
-    link: "/ambassadors",
+    link: "https://mvp.microsoft.com/studentambassadors",
   },
 ];
 
@@ -79,7 +79,12 @@ function Card() {
           <p className="text-neutral-700 text-base md:text-lg md:leading-7 italic font-light">
             Be a force for good
           </p>
-          <button className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex items-center gap-x-1 bg-footer">
+          <a
+            href="https://forms.office.com/pages/responsepage.aspx?id=oBzDhDusrk6tEVGdgCM-b2rhIZyiDIRMq6jycZEfjHlUQUVUU0REQTFCSE40WlFKVjlKU0JaWUxMRi4u"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex items-center gap-x-1 bg-footer"
+          >
             <span className="text-white font-normal text-base md:text-[22px] md:leading-8">
               Join Community
             </span>
@@ -88,7 +93,7 @@ function Card() {
               alt="Join Community Icon"
               className="size-4 md:size-6 img-white-filter"
             />
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -104,19 +109,14 @@ function FooterColumns() {
         <p className={styles.FooterLinkTowerTitle}>Follow Us</p>
         <div className="flex gap-x-2">
           <SocialMediaLink
-            link="#"
+            link="https://x.com/mlsa_unilag"
             image="/icons/twitter-logo.svg"
             alt="Twitter"
           />
           <SocialMediaLink
-            link="#"
+            link="https://www.instagram.com/mlsa_unilag"
             image="/icons/instagram-logo.svg"
             alt="Instagram"
-          />
-          <SocialMediaLink
-            link="#"
-            image="/icons/linkedin-logo.svg"
-            alt="LinkedIn"
           />
         </div>
       </div>
