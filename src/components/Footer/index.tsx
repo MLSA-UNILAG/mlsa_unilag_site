@@ -5,21 +5,25 @@ const quickLinks: LinkProps[] = [
     key: "home",
     text: "Home",
     link: "/",
+    external: false,
   },
   {
     key: "resources",
     text: "Resources",
     link: "/resources",
+    external: false,
   },
   {
     key: "events",
     text: "Events",
     link: "/events",
+    external: false,
   },
   {
     key: "about-us",
     text: "About Us",
     link: "/about-us",
+    external: false,
   },
 ];
 
@@ -28,21 +32,25 @@ const opportunities: LinkProps[] = [
     key: "volunteer",
     text: "Volunteer",
     link: "/volunteer",
+    external: false,
   },
   {
     key: "contribute",
     text: "Contribute",
     link: "/contribute",
+    external: false,
   },
   {
     key: "spotlight",
     text: "Spotlight",
     link: "/spotlight",
+    external: false,
   },
   {
     key: "ambassadors",
     text: "Ambassadors",
     link: "https://mvp.microsoft.com/studentambassadors",
+    external: true,
   },
 ];
 
@@ -83,7 +91,7 @@ function Card() {
             href="https://forms.office.com/pages/responsepage.aspx?id=oBzDhDusrk6tEVGdgCM-b2rhIZyiDIRMq6jycZEfjHlUQUVUU0REQTFCSE40WlFKVjlKU0JaWUxMRi4u"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex items-center gap-x-1 bg-footer"
+            className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex items-center gap-x-1 bg-footer w-fit"
           >
             <span className="text-white font-normal text-base md:text-[22px] md:leading-8">
               Join Community
@@ -124,7 +132,12 @@ function FooterColumns() {
   );
 }
 
-type LinkProps = { key?: string; text: string; link: string };
+type LinkProps = {
+  key?: string;
+  text: string;
+  link: string;
+  external?: boolean;
+};
 
 function FooterLinkTower({
   title,
@@ -145,9 +158,14 @@ function FooterLinkTower({
   );
 }
 
-function Link({ text, link }: LinkProps) {
+function Link({ text, link, external = false }: LinkProps) {
   return (
-    <a href={link} className="inline-flex flex-row items-center">
+    <a
+      href={link}
+      target={external ? "_blank" : "_self"}
+      rel="noopener noreferrer"
+      className="inline-flex flex-row items-center"
+    >
       <span className={styles.FooterLinkTitle}>{text}</span>
       <img
         src="/icons/arrow-top-right.svg"
