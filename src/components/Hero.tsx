@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="mt-[1rem] h-[100vh] bg-[url('/images/students-collab-2.png')] bg-cover">
+    <div className="relative mt-[1rem] h-[100vh] bg-[url('/images/students-collab-2.png')] bg-cover">
       <div className="flex flex-col pt-[15%] w-fit">
         <div className="text-blue-950 text-[3rem] font-medium">
           <h1 className="bg-white pr-[2rem] rounded-tr-lg w-fit">Empowering Students</h1>
@@ -22,17 +22,6 @@ const Hero = () => {
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
 
       <span className="absolute top-[85%] right-[70%] text-[1.1rem] gap-3 flex w-fit items-center text-white border border-blue-500 rounded-lg bg-[#0c92eb88] px-[1rem] py-[.4rem]">
         <div className="bg-blue-600 border border-blue-300 w-fit p-[.4rem] rounded"><img src="/icons/lock-open-1.svg" alt="" className="w-[22px]" /></div>

@@ -1,6 +1,8 @@
 import './App.css'
+import Community from './components/Community'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Milestones from './components/Milestones'
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
     <div className='relative mx-[4.5%] font-segoe'>
       <Header />
       <Hero />
+      <Milestones />
+      <Community />
     </div>
   )
 }
