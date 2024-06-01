@@ -1,31 +1,26 @@
-import "./Hero.css"
-
 const Hero = () => {
   return (
-    <div className="h-[100vh] bg-[url('/images/students-collab-2.png')] bg-cover">
-
-
-
+    <div className="mt-[1rem] h-[100vh] bg-[url('/images/students-collab-2.png')] bg-cover">
       <div className="flex flex-col pt-[15%] w-fit">
         <div className="text-blue-950 text-[3rem] font-medium">
-          <h1 className="empowe bg-white pr-[2rem] rounded-tr-lg w-fit">Empowering Students</h1>
-          <h1 className="bg-white pr-[2rem] rounded-r-[25px] w-fit flex items-center gap-3 pl-[3rem]"><img src="/icons/arrow-up-right-blue.svg" alt="" className="w-[50px]" />Shaping the future</h1>
+          <h1 className="bg-white pr-[2rem] rounded-tr-lg w-fit">Empowering Students</h1>
+          <h1 className="bg-white pr-[2rem] rounded-r-lg w-fit flex items-center gap-3 pl-[3rem]"><img src="/icons/arrow-up-right-blue.svg" alt="" className="w-[50px]" />Shaping the future</h1>
         </div>
 
         <div className="text-neutral-800 text-[1.5rem] w-[75%] flex flex-col">
-          <span className="bg-white pr-[2rem] rounded-br-lg pt-[2rem]">
+          <span className="bg-white pr-[2rem] rounded-br-lg pt-[2rem] pb-[1rem]">
             Join the <span className="text-blue-600 w-fit">Microsoft Learn Student</span>
           </span>
-          <span className="bg-white pr-[2rem] rounded-br-lg text-blue-600 w-fit">Ambassadors, Unilag</span>
+          <span className="bg-white pr-[2rem] rounded-br-lg text-blue-600 w-fit pb-[1rem]">Ambassadors, Unilag</span>
         </div>
 
         <div className="bg-white pr-[2rem] rounded-br-lg w-fit pt-[2rem] pb-[1rem]">
           <button className="flex items-center w-fit font-medium bg-gradient-to-r from-purple-600 to-purple-500 px-[1.5rem] py-[1rem] rounded-[10px] text-white">
-          <span>Join Community</span>
-          <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]" />
-        </button>
+            <span>Join Community</span>
+            <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]" />
+          </button>
         </div>
-        
+
       </div>
 
 

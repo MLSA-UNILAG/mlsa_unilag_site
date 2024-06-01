@@ -23,8 +23,11 @@ const Header = () => {
   }, [dispatch]);
 
   return (
-    <div className="absolute w-full bg-transparent h-[15vh] flex items-center justify-between">
-      <div><img src="/mlsa.png" alt="" /></div>
+    <div className="absolute w-full bg-transparent h-[12vh] flex items-center justify-between">
+      <div className="bg-[#fff] py-[1rem] px-[1.5rem] h-[40vh] flex items-center"><img src="/mlsa.png" alt="" /></div>
+
+
+
       <div className="bg-[#ebe7f1b2] w-[62%] text-neutral-500 flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
 
         <div className="cursor-pointer" onClick={goToHome}>
@@ -96,7 +99,9 @@ const Header = () => {
         </div>
 
       </div>
-      <div>
+
+
+      <div className="bg-white rounded-bl-[10px] py-[1rem] px-[1.5rem]">
         <button className="flex items-center font-medium bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] rounded-[10px] text-white">
           <span>Join Community</span>
           <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]"/>
