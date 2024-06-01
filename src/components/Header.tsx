@@ -23,9 +23,9 @@ const Header = () => {
   }, [dispatch]);
 
   return (
-    <div className="w-full bg-transparent h-[15vh] flex items-center justify-between">
+    <div className="absolute w-full bg-transparent h-[15vh] flex items-center justify-between">
       <div><img src="/mlsa.png" alt="" /></div>
-      <div className="bg-[#807c7c7c] w-[62%] text-neutral-500 flex justify-between px-[4rem] pt-[1rem] rounded-lg">
+      <div className="bg-[#ebe7f1b2] w-[62%] text-neutral-500 flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
 
         <div className="cursor-pointer" onClick={goToHome}>
           <div className="flex flex-row items-center justify-center">
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`h-[1rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "home" ? "" : "opacity-[0]"}`}
+            className={`h-[1.2rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "home" ? "" : "opacity-[0]"}`}
           />
         </div>
 
@@ -57,7 +57,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`h-[1rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "about-us" ? "" : "opacity-[0]"}`}
+            className={`h-[1.2rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "about-us" ? "" : "opacity-[0]"}`}
           />
         </div>
 
@@ -74,7 +74,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`h-[1rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "events" ? "" : "opacity-[0]"}`}
+            className={`h-[1.2rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "events" ? "" : "opacity-[0]"}`}
           />
         </div>
 
@@ -91,7 +91,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`h-[1rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "resources" ? "" : "opacity-[0]"}`}
+            className={`h-[1.2rem] border-b-[3px] border-solid border-blue-600 ${currentPage === "resources" ? "" : "opacity-[0]"}`}
           />
         </div>
 

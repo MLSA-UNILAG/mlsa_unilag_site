@@ -1,11 +1,11 @@
 import './App.css'
 import Header from './components/Header'
-import Hero from './components/Hero'
+import Hero from './components/Hero/Hero'
 
 function App() {
 
   return (
-    <div className='mx-[4.5%] font-segoe'>
+    <div className='relative mx-[4.5%] font-segoe'>
       <Header />
       <Hero />
     </div>
