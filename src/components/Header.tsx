@@ -5,7 +5,7 @@ import { useCallback } from "react"
 const Header = () => {
   const dispatch = useDispatch()
   const currentPage = useSelector(state => state.currentPage)
-  
+
   const goToHome = useCallback(() => {
     dispatch(setCurrentPage("home"));
   }, [dispatch]);
@@ -17,16 +17,14 @@ const Header = () => {
   const goToEvents = useCallback(() => {
     dispatch(setCurrentPage("events"));
   }, [dispatch]);
-  
+
   const goToResources = useCallback(() => {
     dispatch(setCurrentPage("resources"));
   }, [dispatch]);
 
   return (
-    <div className="absolute w-full bg-transparent h-[12vh] flex items-center justify-between">
-      <div className="bg-[#fff] py-[1rem] px-[1.5rem] h-[40vh] flex items-center"><img src="/mlsa.png" alt="" /></div>
-
-
+    <div className="px-[4vw] w-full h-[12vh] flex items-center justify-between">
+      <div className="bg-purple-50 py-[1rem] pr-[1.5rem] flex items-center"><img src="/mlsa.png" alt="" /></div>
 
       <div className="bg-[#ebe7f1b2] w-[62%] text-neutral-500 flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
 
@@ -100,11 +98,10 @@ const Header = () => {
 
       </div>
 
-
-      <div className="bg-white rounded-bl-[10px] py-[1rem] px-[1.5rem]">
+      <div className="bg-purple-50 rounded-bl-[10px] py-[1rem] pl-[1.5rem]">
         <button className="flex items-center font-medium bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] rounded-[10px] text-white">
           <span>Join Community</span>
-          <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]"/>
+          <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]" />
         </button>
       </div>
     </div>
