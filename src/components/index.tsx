@@ -1,3 +1,4 @@
+import FAQ from "./FAQ";
 import Footer from "./Footer";
 
-export { Footer };
+export { FAQ, Footer };
