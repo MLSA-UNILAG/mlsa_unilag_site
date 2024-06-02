@@ -116,6 +116,9 @@ export default {
         "base-4": "15.4px",
         "26xl": "45px",
       },
+      backgroundImage: {
+        footer: "linear-gradient(90deg, #7335BB 0%, #8747D6 100%)",
+      },
     },
   },
   plugins: [],
