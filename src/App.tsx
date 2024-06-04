@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Milestones from './components/Milestones'
 import "./App.css";
 import { Footer } from "./components";
+import Spotlight from './components/Spotlight';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Milestones />
         <Community />
+        <Spotlight />
       </div>
       <Footer />
     </div>
