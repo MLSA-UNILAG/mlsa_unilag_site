@@ -4,20 +4,20 @@ const Spotlight = () => {
     const spotlightElements: SpotLight[] = [
         {
             picture: "/images/lady-yellow-potrait.png",
-            name: "Jennifer Lopex",
+            name: "Samuel Bamgola",
+            role: "Gold Ambassador",
+            link: "#"
+        },
+        {
+            picture: "/images/lady-yellow-potrait.png",
+            name: "Paul Asalu",
             role: "Beta Ambassador",
             link: "#"
         },
         {
             picture: "/images/lady-yellow-potrait.png",
-            name: "Ariana Grande",
-            role: "Beta Ambassador",
-            link: "#"
-        },
-        {
-            picture: "/images/lady-yellow-potrait.png",
-            name: "David Beckham",
-            role: "Beta Ambassador",
+            name: "Emeka Aladimma",
+            role: "Alpha Ambassador",
             link: "#"
         },
 
