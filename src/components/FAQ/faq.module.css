@@ -1,0 +1,3 @@
+.FAQDetail {
+  @apply w-full text-3xl rounded-2xl text-neutral-950 cursor-pointer p-9 bg-white shadow-[4px_8px_24px_0_rgba(52,17,90,0.05)];
+}
