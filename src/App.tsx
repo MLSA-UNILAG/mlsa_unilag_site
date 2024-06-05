@@ -1,14 +1,25 @@
+import './App.css'
+import Community from './components/Community'
+import Header from './components/Header'
+import Milestones from './components/Milestones'
 import "./App.css";
 import { JoinUs, FAQ, Footer } from "./components";
+import Spotlight from './components/Spotlight';
 
 function App() {
   return (
-    <div className="font-segoe flex flex-col bg-purple-50">
-      <JoinUs />
-      <FAQ />
+    <div className='relative font-segoe bg-purple-50'>
+      <div className='px-[4vw] pt-[1rem]'>
+        <Header />
+        <Milestones />
+        <Community />
+        <Spotlight />
+        <JoinUs />
+        <FAQ />
+      </div>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
