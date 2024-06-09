@@ -1,4 +1,5 @@
 import { SpotLight } from "@/types/spotlightType"
+import { current } from "@reduxjs/toolkit"
 
 const Spotlight = () => {
     const spotlightElements: SpotLight[] = [
@@ -28,8 +29,8 @@ const Spotlight = () => {
             <h3 className="text-blue-600 text-[2rem] text-center font-medium pb-3">Community Spotlight</h3>
             <span className="w-full flex justify-center text-[1.2rem]">Our Community members presently setting the pace in the tech industry</span>
             <div className="mt-[5rem] mb-[3rem] flex items-center justify-between w-[65vw]">
-                {spotlightElements.map((person: SpotLight) => (
-                    <div className="bg-white rounded-xl shadow-md w-[20vw] h-[40vh] flex flex-col items-center justify-between">
+                {spotlightElements.map((person: SpotLight, idx:number) => (
+                    <div key={idx} className="bg-white rounded-xl shadow-md w-[20vw] h-[40vh] flex flex-col items-center justify-between">
                         <div className="relative w-full bg-blue-100 flex justify-center">
                             <img src={person.picture} alt="" className="absolute w-[12vw] h-[20vh] rounded-xl top-[-2.5rem]" />
                         </div>

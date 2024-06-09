@@ -150,9 +150,14 @@ function FooterLinkTower({
     <div className="flex flex-col flex-1">
       <p className={styles.FooterLinkTowerTitle}>{title}</p>
       <div className="flex flex-col gap-y-2 md:gap-y-4">
-        {links.map((link) => (
-          <Link key={link.key ?? link.text} {...link} />
-        ))}
+        {links.map((Ilink) => {
+          const {
+            link,text,external,key
+          } = Ilink
+          return (
+            <Link key={key ?? text} external={external} text={text} link={link}/>
+          )
+        })}
       </div>
     </div>
   );
