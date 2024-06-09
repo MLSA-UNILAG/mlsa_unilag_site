@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from "react-redux"
 import { setCurrentPage } from "../redux/slices/pageSlice"
+import { RootState } from '../redux/store'
 import { useCallback } from "react"
 
 const Header = () => {
   const dispatch = useDispatch()
-  const currentPage = useSelector(state => state.currentPage)
+  const currentPage = useSelector<RootState>(state => state.currentPage)
 
   const goToHome = useCallback(() => {
     dispatch(setCurrentPage("home"));

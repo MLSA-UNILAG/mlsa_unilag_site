@@ -1,5 +1,5 @@
 import { SpotLight } from "@/types/spotlightType"
-import { current } from "@reduxjs/toolkit"
+// import { current } from "@reduxjs/toolkit"   
 
 const Spotlight = () => {
     const spotlightElements: SpotLight[] = [
