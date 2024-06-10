@@ -38,3 +38,11 @@
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(65deg)
     brightness(115%) contrast(110%);
 }
+
+.milestone {
+  background: linear-gradient(
+    90deg,
+    rgba(52, 17, 90, 0.64) 0%,
+    rgba(81, 40, 123, 0.4) 100%
+  );
+}
