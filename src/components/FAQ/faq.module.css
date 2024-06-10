@@ -1,3 +1,17 @@
 .FAQContainer {
   @apply rounded-2xl p-9 bg-white shadow-[4px_8px_24px_0_rgba(52,17,90,0.05)];
 }
+
+.FAQContent {
+  max-width: 100%;
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, margin 300ms ease-out;
+}
+
+.FAQContainer > details[open] + .FAQContent {
+  margin-top: 1rem;
+  max-height: 50vh; /* Set a max-height value enough to show all the content */
+  transition: max-height, margin 300ms ease-out;
+}
