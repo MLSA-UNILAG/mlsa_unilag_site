@@ -115,7 +115,7 @@ function FAQDetail({ question, answer }: FAQ) {
               <IconHelpCircle />
               {question}
             </div>
-            <IconChevronUp className="transform transition-transform duration-300 group-open:rotate-180" />
+            <IconChevronUp className="transform transition-all duration-300 group-open:rotate-180 group-hover:scale-150" />
           </div>
         </summary>
       </details>
