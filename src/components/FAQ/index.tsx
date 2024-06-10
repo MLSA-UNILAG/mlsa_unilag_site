@@ -107,18 +107,20 @@ export default function FAQ() {
 
 function FAQDetail({ question, answer }: FAQ) {
   return (
-    <details className={`${styles.FAQDetail} group`}>
-      <summary className="w-full list-none font-medium">
-        <div className="inline-flex w-full items-center justify-between">
-          <div className="inline-flex items-center gap-x-6">
-            <IconHelpCircle />
-            {question}
+    <div className={styles.FAQContainer}>
+      <details className="text-neutral-950 cursor-pointer w-full text-3xl max-w-full overflow-hidden group">
+        <summary className="w-full list-none block marker:hidden font-medium">
+          <div className="inline-flex w-full items-center justify-between">
+            <div className="inline-flex items-center gap-x-6">
+              <IconHelpCircle />
+              {question}
+            </div>
+            <IconChevronUp className="transform transition-all duration-300 group-open:rotate-180 group-hover:scale-150" />
           </div>
-          <IconChevronUp className="transform transition-transform group-open:rotate-180" />
-        </div>
-      </summary>
-      <div className="mt-4 md:ml-12">{answer}</div>
-    </details>
+        </summary>
+      </details>
+      <div className={`md:ml-12 ${styles.FAQContent}`}>{answer}</div>
+    </div>
   );
 }
 
