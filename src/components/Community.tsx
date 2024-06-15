@@ -1,10 +1,6 @@
 const Community = () => {
   return (
     <div className="my-[3rem] 3xl:mt-[5rem] flex items-center h-[40vh] 3xl:h-[30vh] gap-6">
-
-
-
-
       <div className="w-[40%] flex flex-col h-full">
         <div className="h-[70%] bg-white rounded-t-xl rounded-br-xl pt-[1.5rem] px-[2rem]">
           <h2 className="text-blue-600 text-[2rem] 3xl:text-[3rem] font-medium pb-[1rem] text-center">Why Join Our Community</h2>
@@ -34,13 +30,13 @@ const Community = () => {
         <div className="flex items-center gap-4 h-[50%]">
           <div className="relative bg-white shadow-md w-[60%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[70%] 3xl:w-[65%]">Exclusive learning resources</span>
-            <div className="absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
+            <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
               <img src="/icons/arrow-up-right.svg" alt="" className="w-[40px] rotate-90" />
             </div>
           </div>
           <div className="relative bg-white shadow-md w-[40%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[70%] 3xl:w-[65%]">Mentorship opportunities</span>
-            <div className="absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">
+            <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">
               <img src="/icons/arrow-up-right.svg" alt="" className="w-[40px] rotate-90" />
             </div>
           </div>
@@ -50,13 +46,13 @@ const Community = () => {
         <div className="flex items-center gap-4 h-[50%]">
           <div className="relative bg-white shadow-md w-[40%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[70%] 3xl:w-[65%]">Networking events</span>
-            <div className="absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">
+            <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">
               <img src="/icons/arrow-up-right.svg" alt="" className="w-[40px] rotate-90" />
             </div>
           </div>
           <div className="relative bg-white shadow-md w-[60%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[75%]">A chance to give back to the community</span>
-            <div className="absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
+            <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
               <img src="/icons/arrow-up-right.svg" alt="" className="w-[40px] rotate-90" />
             </div>
           </div>

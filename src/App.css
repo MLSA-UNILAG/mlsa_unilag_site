@@ -46,3 +46,14 @@
     rgba(81, 40, 123, 0.4) 100%
   );
 }
+
+@keyframes floater {
+  0%{transform: translateY(-10%); transition: ease .5s}
+  50%{transform: translateY(10%); transition: ease .5s}
+}
+
+.float{
+  transition: ease .5s;
+  transform: translateY(-10%);
+  animation: floater 1.5s infinite;
+}

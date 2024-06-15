@@ -7,8 +7,6 @@ const Header = () => {
   const dispatch = useDispatch()
   const currentPage = useSelector<RootState>(state => state.currentPage)
 
-
-
   const [sliderPosition, setSliderPosition] = useState(0);
 
   const goToHome = useCallback(() => {
