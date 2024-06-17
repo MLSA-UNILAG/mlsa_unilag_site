@@ -79,6 +79,9 @@ export default {
 
       "2xl": "1400px",
       // => @media (min-width: 1400px) { ... }
+
+      "3xl": "2500px",
+      // => @media (min-width: 2500px) { ... }
     },
     extend: {
       fontFamily: {
