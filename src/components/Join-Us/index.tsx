@@ -1,7 +1,7 @@
 export default function JoinUs() {
   return (
     <section className="py-8 md:py-16 px-4 flex flex-col w-full text-center items-center">
-      <h2 className="mb-4 text-blue-600 text-2xl md:text-4xl font-semibold">
+      <h2 className="mb-4 text-blue-600 text-2xl md:text-4xl font-bold">
         Become a Part of our Community
       </h2>
       <p className="mb-12 text-neutral-950 text-base md:text-3xl">
