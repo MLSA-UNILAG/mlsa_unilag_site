@@ -16,7 +16,7 @@
 @font-face {
   font-family: "Segoe";
   font-weight: 400;
-  src: local("Segoe"), url("/fonts/ClashDisplayRegular.otf") format("opentype");
+  src: local("Segoe"), url("/fonts/SegoeUI.ttf") format("truetype");
 }
 @font-face {
   font-family: "Segoe";
@@ -31,10 +31,21 @@
 @font-face {
   font-family: "Segoe";
   font-weight: 700;
-  src: local("Segoe"), url("/fonts/ClashDisplayBold.otf") format("opentype");
+  src: local("Segoe"), url("/fonts/SegoeUIBold.ttf") format("truetype");
 }
 
 .img-white-filter {
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(65deg)
     brightness(115%) contrast(110%);
 }
+
+.hero-bg{
+  background-image: url("/images/hero-image-mask-group.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* clip-path: polygon(90% 90%, 90% 25%, 70% 25%, 70% 5%, 20% 5%, 20% 30%, 40% 30%, 40% 45%, 50% 50%, 50% 60%, 40% 60%, 40% 75%, 20% 75%, 20% 90%); */
+}
+
+/* * {
+  border: 1px solid red;
+} */

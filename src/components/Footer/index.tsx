@@ -78,13 +78,13 @@ function Card() {
           className="self-center md:self-start"
         />
         <div>
-          <p className="text-neutral-950 text-xl md:text-9xl font-medium md:leading-[42px]">
+          <p className="text-neutral-950 text-xl md:text-9xl   md:leading-[42px]">
             Microsoft Learn Student Ambassadors
           </p>
           <p className="mb-2 md:mb-4 text-neutral-950 text-lg md:text-3xl font-normal md:leading-8">
             University of Lagos
           </p>
-          <p className="text-neutral-700 text-base md:text-lg md:leading-7 italic font-light">
+          <p className="text-neutral-700 text-base md:text-lg md:leading-7 italic">
             Be a force for good
           </p>
           <a
