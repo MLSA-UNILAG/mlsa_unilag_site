@@ -1,10 +1,10 @@
 const Community = () => {
   return (
-    <div className="my-[3rem] 3xl:mt-[5rem] flex items-center h-[40vh] 3xl:h-[30vh] gap-6">
-      <div className="w-[40%] flex flex-col h-full">
+    <div className="my-[3rem] 3xl:mt-[5rem] flex items-stretch lg:h-[40v] 3xl:h-[30vh] gap-6">
+      <div className="xl:w-[40%] md:w-[50%] flex flex-col">
         <div className="h-[70%] bg-white rounded-t-xl rounded-br-xl pt-[1.5rem] px-[2rem]">
-          <h2 className="text-blue-600 text-[2rem] 3xl:text-[3rem] font-medium pb-[1rem] text-center">Why Join Our Community</h2>
-          <p className="text-[1.1rem] 3xl:text-[1.8rem]">
+          <h2 className="text-blue-600 xl:text-[2rem] lg:text-[1.5rem] 3xl:text-[3rem] font-medium pb-[1rem] text-center">Why Join Our Community</h2>
+          <p className="text-[1.1rem] 3xl:text-[1.8rem] pb-[1rem]">
             We are on a mission to equip students with the latest Microsoft
             tech skills and empower them to lead tech innovation on campus and beyond.
           </p>
@@ -26,8 +26,8 @@ const Community = () => {
 
 
 
-      <div className="flex flex-col w-[60%] h-full text-[1.4rem] 3xl:text-[2rem] gap-10">
-        <div className="flex items-center gap-4 h-[50%]">
+      <div className="flex flex-col justify-between xl:w-[60%] md:w-[50%] h-auto xl:text-[1.4rem] lg:text-[1.2rem] 3xl:text-[2rem] gap-10">
+        <div className="flex items-center gap-4 h-[40%]">
           <div className="relative bg-white shadow-md w-[60%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[70%] 3xl:w-[65%]">Exclusive learning resources</span>
             <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
@@ -43,7 +43,7 @@ const Community = () => {
         </div>
 
 
-        <div className="flex items-center gap-4 h-[50%]">
+        <div className="flex items-center gap-4 h-[40%]">
           <div className="relative bg-white shadow-md w-[40%] h-full rounded-xl flex items-center pl-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 w-[70%] 3xl:w-[65%]">Networking events</span>
             <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">

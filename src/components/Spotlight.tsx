@@ -26,14 +26,14 @@ const Spotlight = () => {
     return (
         <div className="mt-[6rem] mb-[3rem] flex flex-col items-center">
             <h3 className="text-blue-600 text-[2rem] 3xl:text-[3rem] text-center font-medium pb-3">Community Spotlight</h3>
-            <span className="w-full flex justify-center text-[1.2rem] 3xl:text-[1.5rem]">Our Community members presently setting the pace in the tech industry</span>
+            <span className="w-full flex justify-center text-center text-[1.2rem] 3xl:text-[1.5rem]">Our Community members presently setting the pace in the tech industry</span>
 
             <div className="flex w-full justify-center">
-                <div className="mt-[5rem] mb-[3rem] flex flex-wrap items-center justify-between w-[65vw] 3xl:w-[50vw] gap-y-[3.5rem]">
+                <div className="mt-[5rem] mb-[3rem] flex flex-wrap items-center lg:justify-between justify-center w-[65vw] 3xl:w-[50vw] gap-y-[3.5rem]">
                     {spotlightElements.map((person: SpotLight) => (
-                        <div className="bg-white rounded-xl shadow-md w-[260px] 3xl:w-[15vw] xs:h-[50vh] md:h-[40vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
+                        <div className="bg-white rounded-xl shadow-md w-[260px] 3xl:w-[15vw] xs:h-[50vh] md:h-[42vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
                             <div className="relative w-full bg-blue-100 flex justify-center">
-                                <img src={person.picture} alt="" className="absolute w-[155px] md:h-[20vh] xs:h-[25vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
+                                <img src={person.picture} alt="" className="absolute 2xs:w-[140px] md:w-[155px] md:h-[20vh] 2xs:h-[22vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
                             </div>
                             <div>
                                 <div className="flex flex-col gap-2 mt-[5.5rem]">
