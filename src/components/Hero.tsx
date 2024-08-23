@@ -2,7 +2,7 @@ import Header from "./Header"
 
 const Hero = () => {
     return (
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center max-w-screen-xl">
             <img className="py-6" src='/images/hero-image-mask-group.png' alt="hero mask" />
             <Header />
             <div className='flex gap-0 w-full h-[75%] absolute top-0 z-20'>
