@@ -24,7 +24,7 @@ const Header = () => {
   }, [dispatch]);
 
   return (
-    <div className="px-[4v] w-full h-[12vh] flex items-center justify-between absolute top-8 left-0 z-30">
+    <div className="px-[4v] w-full max-h-[12vh] flex items-center justify-between absolute top-8 left-0 z-30">
       <div className="py-[1rem] pr-[1.5rem] flex items-center"><img src="/mlsa.png" alt="" /></div>
 
       <div className="bg-[#ebe7f1b2] w-[60%] text-neutral-500 flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
