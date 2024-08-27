@@ -30,7 +30,9 @@ const Header = () => {
   }, [dispatch]);
 
   return (
-    <div className="px-[4v] w-full h-[12vh] flex items-center justify-between">
+    <>
+    <div className="MOBILE md:hidden">MOBILE HEADER IS HERE</div>
+    <div className="hidden md:flex px-[4v] w-full h-[12vh] items-center justify-between">
       <div className="bg-purple-50 py-[1rem] pr-[1.5rem] flex items-center"><img src="/mlsa.png" alt="" /></div>
 
       <div className="relative bg-[#ebe7f1b2] w-[62%] text-neutral-500 flex flex-col justify-between pt-[1.2rem] rounded-lg">
@@ -102,6 +104,8 @@ const Header = () => {
         </button>
       </div>
     </div>
+    </>
+    
   )
 }
 
