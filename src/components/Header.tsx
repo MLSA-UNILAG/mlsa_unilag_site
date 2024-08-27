@@ -96,7 +96,7 @@ const Header = () => {
       </div>
 
       <div className="bg-purple-50 rounded-bl-[10px] py-[1rem] pl-[1.5rem]">
-        <button className="flex items-center font-medium bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] rounded-[10px] text-white">
+        <button className="flex items-center font-medium bg-gradient-to-r from-purple-600 to-purple-700 2xs:px-[.7rem] 2xs:text-[.9rem] lg:text-[1rem] lg:px-[1.5rem] py-[1rem] rounded-[10px] text-white">
           <span>Join Community</span>
           <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]" />
         </button>
