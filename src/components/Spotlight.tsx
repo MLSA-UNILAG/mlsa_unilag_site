@@ -31,9 +31,9 @@ const Spotlight = () => {
             <div className="flex w-full justify-center">
                 <div className="mt-[5rem] mb-[3rem] flex flex-wrap items-center lg:justify-between justify-center w-[65vw] 3xl:w-[50vw] gap-y-[3.5rem]">
                     {spotlightElements.map((person: SpotLight) => (
-                        <div className="bg-white rounded-xl shadow-md w-[260px] 3xl:w-[15vw] xs:h-[50vh] md:h-[42vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
+                        <div className="bg-white rounded-xl shadow-md w-[260px] 3xl:w-[15vw] xs:h-[55vh] md:h-[60vh] xl:h-[45vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
                             <div className="relative w-full bg-blue-100 flex justify-center">
-                                <img src={person.picture} alt="" className="absolute 2xs:w-[140px] md:w-[155px] md:h-[20vh] 2xs:h-[22vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
+                                <img src={person.picture} alt="" className="absolute 2xs:w-[120px] xs:h-[25vh] md:w-[155px] md:h-[25vh] xl:h-[20vh] 2xs:h-[22vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
                             </div>
                             <div>
                                 <div className="flex flex-col gap-2 mt-[5.5rem]">
