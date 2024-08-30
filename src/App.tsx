@@ -9,7 +9,7 @@ import Spotlight from './components/Spotlight';
 function App() {
   return (
     <div className='relative font-segoe bg-purple-50'>
-      <div className='px-[4vw] pt-[1rem] 3xl:px-[10vw]'>
+      <div className='px-[4vw] 3xl:px-[10vw]'>
         <Hero />
         <Milestones />
         <Community />

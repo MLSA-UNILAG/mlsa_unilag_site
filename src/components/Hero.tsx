@@ -21,7 +21,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className='w-full h-1/3 flex gap-0 flex-col'>
-                        <div className='w-full h-1/2 text-blue-950 font-normal text-[22px]'>
+                        <div className='w-[80%] h-1/2 text-blue-950 font-normal text-[22px]'>
                             <h3>Join the <span className='text-blue-600'>Microsoft Learn Student Ambassadors, Unilag</span></h3>
                         </div>
                         <div className='w-full h-1/2 mt-10'>
