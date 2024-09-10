@@ -24,10 +24,8 @@ const Community = () => {
         </div>
       </div>
 
-
-
-      <div className="flex flex-col justify-between xl:w-[60%] md:w-[50%] h-auto text-[.8rem] sm:text-[.9rem] xl:text-[1.4rem] lg:text-[1.2rem] 3xl:text-[2rem] gap-10">
-        <div className="flex items-center gap-4 md:h-[40%] h-[22vh]">
+      <div className="flex flex-col justify-between xl:w-[60%] md:w-[50%] h-auto text-[.8rem] sm:text-[.9rem] font-medium xl:text-[1.4rem] lg:text-[1.2rem] 3xl:text-[2rem] gap-10">
+        <div className="flex items-center gap-4 md:h-[40%] h-[12vh] lg:h-[22vh]">
           <div className="relative bg-white shadow-md w-[60%] h-full rounded-xl flex items-center px-[1rem] md:px-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 sm:w-[95%] 3xl:w-[65%]">Exclusive learning resources</span>
             <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#d59dff8f] rounded-lg w-fit p-[.5rem]">
@@ -42,8 +40,7 @@ const Community = () => {
           </div>
         </div>
 
-
-        <div className="flex items-center gap-4 md:h-[40%] h-[22vh]">
+        <div className="flex items-center gap-4 md:h-[40%] h-[12vh] lg:h-[22vh]">
           <div className="relative bg-white shadow-md w-[40%] h-full rounded-xl flex items-center px-[1rem] md:px-[1.5rem] 3xl:pl-[2rem]">
             <span className="text-blue-600 sm:w-[95%] 3xl:w-[65%]">Networking events</span>
             <div className="float absolute top-[-1.5rem] right-[1rem] bg-[#7cc7fd8f] rounded-lg w-fit p-[.5rem]">
