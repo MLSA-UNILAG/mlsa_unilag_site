@@ -29,11 +29,11 @@ const Spotlight = () => {
             <span className="w-full flex justify-center text-center text-[1.2rem] 3xl:text-[1.5rem]">Our Community members presently setting the pace in the tech industry</span>
 
             <div className="flex w-full justify-center">
-                <div className="mt-[5rem] mb-[3rem] flex flex-wrap items-center lg:justify-between justify-between w-[65vw] 3xl:w-[50vw] gap-y-[3.5rem]">
+                <div className="mt-[5rem] mb-[3rem] flex flex-wrap items-center lg:justify-between justify-center w-[65vw] 3xl:w-[50vw] gap-y-[3.5rem]">
                     {spotlightElements.map((person: SpotLight) => (
-                        <div className="bg-white rounded-xl shadow-md w-[220px] lg:w-[270px] xl:w-[250px] 3xl:w-[15vw] h-[40vh] xs:h-[42vh] sm:h-[45vh] md:h-[50vh] lg:h-[42vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
+                        <div className="bg-white rounded-xl shadow-md w-[220px] lg:w-[270px] xl:w-[250px] 3xl:w-[15vw] xs:h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[42vh] 3xl:h-[33vh] flex flex-col items-center justify-between">
                             <div className="relative w-full bg-blue-100 flex justify-center">
-                                <img src={person.picture} alt="" className="absolute 2xs:w-[120px] h-[20vh] md:w-[155px] md:h-[25vh] lg:h-[20vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
+                                <img src={person.picture} alt="" className="absolute 2xs:w-[150px] h-[18vh] md:w-[155px] md:h-[25vh] lg:h-[20vh] 3xl:h-[17vh] 3xl:w-[10vw] rounded-xl top-[-2.5rem]" />
                             </div>
                             <div>
                                 <div className="flex flex-col gap-2 mt-[5.5rem]">

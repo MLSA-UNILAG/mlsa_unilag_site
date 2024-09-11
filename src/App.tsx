@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='relative font-segoe bg-purple-50'>
       <div className='px-[4vw] 3xl:px-[10vw]'>
-        <Hero />
+        {/* <Hero /> */}
         <Milestones />
         <Community />
         <Spotlight />
