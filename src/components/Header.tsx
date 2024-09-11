@@ -25,9 +25,9 @@ const Header = () => {
 
   return (
     <div className="px-[4v] w-full max-h-[12vh] flex items-center justify-between absolute top-8 left-0 z-30">
-      <div className="py-[1rem] pr-[1.5rem] flex items-center"><img src="/mlsa.png" alt="" /></div>
+      <div className="py-[1rem] pr-[1.5rem] flex items-center"><img className="logo-img" src="/mlsa.png" alt="" /></div>
 
-      <div className="bg-[#ebe7f1b2] w-[60%] text-neutral-500 flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
+      <div className="bg-[#ebe7f1b2] w-[60%] text-neutral-500 text-btn flex justify-between px-[4rem] pt-[1.2rem] rounded-lg">
 
         <div className="cursor-pointer" onClick={goToHome}>
           <div className="flex flex-row items-center justify-center">
@@ -100,7 +100,7 @@ const Header = () => {
       </div>
 
       <div className="rounded-bl-[10px] py-[1rem] pl-[1.5rem]">
-        <button className="flex items-center   bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] rounded-[10px] text-white">
+        <button className="flex items-center   bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] text-btn gap-2 rounded-[10px] text-white">
           <span>Join Community</span>
           <img src="/icons/arrow-up-right.svg" alt="" className="w-[20px]" />
         </button>
