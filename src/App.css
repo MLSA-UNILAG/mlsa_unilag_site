@@ -62,9 +62,22 @@
   background-image: url("/images/hero-image-mask-group.png");
   background-size: contain;
   background-repeat: no-repeat;
-  /* clip-path: polygon(90% 90%, 90% 25%, 70% 25%, 70% 5%, 20% 5%, 20% 30%, 40% 30%, 40% 45%, 50% 50%, 50% 60%, 40% 60%, 40% 75%, 20% 75%, 20% 90%); */
 }
 
-/* * {
-  border: 1px solid red;
-} */
+@media (min-width: 2560px) {
+  .text-header {
+    font-size: 72px;
+  }
+  .text-sub {
+    font-size: 40px;
+  }
+  .text-btn {
+    font-size: 28px;
+  }
+  .pill {
+    width: 500px;
+  }
+  .logo-img {
+    width: 150px;
+  }
+}
