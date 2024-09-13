@@ -1,17 +1,25 @@
 const Milestones = () => {
     return (
-        <div className="mt-[3rem] bg-gradient-to-r from-purple-900 to-purple-400 flex items-center justify-between rounded-xl border-[2px] border-purple-600 h-[16vh] py-[1rem] px-[3rem] w-full text-white">
-            <div className="flex items-center gap-6 border-r-[2px] border-purple-800">
-                <span className="text-[2rem]">300+</span>
-                <span className="text-[1.5rem] w-[60%]">Active members</span>
+        <div className="milestone mt-[3rem] flex items-center justify-around rounded-xl border-[2px] border-purple-600 lg:h-[16vh] 2xl:h-[18vh] 3xl:h-[12vh] py-[1rem] 2xl:py-[1.2rem] 3xl:py-[1.5rem] lg:px-[3rem] text-white">
+            <div className="flex items-center">
+                <div className="w-full flex flex-col lg:flex-row lg:gap-4 3xl:gap-8 items-center lg:px-[2rem] px-[1rem]">
+                    <span className="text-[1rem] md:text-[1.7rem] lg:text-[2rem] 2xl:text-[2.5rem] 3xl:text-[3.5rem]">300+</span>
+                    <span className="text-[.8rem] md:text-[1rem] lg:text-[1.4rem] 2xl:text-[1.8rem] 3xl:text-[2.5rem] text-center">Active members</span>
+                </div>
             </div>
-            <div className="flex items-center gap-6 border-r-[2px] border-purple-800">
-                <span className="text-[2rem]">5+</span>
-                <span className="text-[1.5rem] w-[60%]">Meetups & Events</span>
+            <div className="w-[1px] h-[4rem] lg:h-full bg-purple-800 rounded-lg"/>
+            <div className="flex items-center">
+                <div className="w-full flex flex-col lg:flex-row lg:gap-4 3xl:gap-8 items-center lg:px-[2rem] px-[1rem]">
+                    <span className="text-[1rem] md:text-[1.7rem] lg:text-[2rem] 2xl:text-[2.5rem] 3xl:text-[3.5rem]">5+</span>
+                    <span className="text-[.8rem] md:text-[1rem] lg:text-[1.4rem] 2xl:text-[1.8rem] 3xl:text-[2.5rem] text-center">Meetups & Events</span>
+                </div>
             </div>
-            <div className="flex items-center gap-6">
-                <span className="text-[2rem]">1000+</span>
-                <span className="text-[1.5rem] w-[60%]">Learning materials</span>
+            <div className="w-[1px] h-[4rem] lg:h-full bg-purple-800 rounded-lg" />
+            <div className="flex items-center">
+                <div className="w-full flex flex-col lg:flex-row lg:gap-4 3xl:gap-8 items-center lg:px-[2rem] px-[1rem]">
+                    <span className="text-[1rem] md:text-[1.7rem] lg:text-[2rem] 2xl:text-[2.5rem] 3xl:text-[3.5rem]">1000+</span>
+                    <span className="text-[.8rem] md:text-[1rem] lg:text-[1.4rem] 2xl:text-[1.8rem] 3xl:text-[2.5rem] text-center">Learning materials</span>
+                </div>
             </div>
 
         </div>
