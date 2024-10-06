@@ -84,12 +84,12 @@ const FAQContent: FAQ[] = [
 
 export default function FAQ() {
   return (
-    <section className="py-8 md:py-16 px-4 md:px-12 xl:px-20 min-[1440px]:px-36">
+    <section className="py-8 md:py-16 px-4 md:px-12 xl:px-20 min-[1440px]:px-0 max-w-[1440px] mx-auto">
       <h2 className="mb-4 text-center text-blue-600 text-2xl md:text-4xl font-bold">
         FAQs
       </h2>
       <p className="mb-12 text-neutral-950 text-center text-base md:text-3xl">
-        Everything you need to know about
+        Everything you need to know about{" "}
         <span className="text-blue-600">MLSA UNILAG</span>
       </p>
       <div className="flex flex-col gap-y-4">
