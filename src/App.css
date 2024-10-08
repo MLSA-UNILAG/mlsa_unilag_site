@@ -81,3 +81,10 @@
     width: 150px;
   }
 }
+
+@media (max-width: 2559px) and (min-width: 1365px)  {
+  .text-header {
+    font-size: 48px;
+  }
+
+}
