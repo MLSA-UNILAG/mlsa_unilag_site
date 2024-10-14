@@ -1,9 +1,11 @@
 import Header from "./Header";
+import MobileNav from "./MobileNav";
 
 const Hero = () => {
   return (
     <div className="w-full">
-      <div className="relative hidden md:flex items-center justify-center w-full">
+      <MobileNav />
+      <div className="relative hidden lg:flex items-center justify-center w-full">
         <img
           className="py-6 w-screen"
           src="/images/hero-image-mask-group.png"
@@ -67,7 +69,37 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex h-screen w-full"></div>
+      <div className="lg:hidden flex h-screen w-full items-center mobile-hero rounded-lg relative">
+        <div className="w-full h-full absolute top-0 left-0 bg-white opacity-60 z-10"></div>
+        <div className="flex flex-col w-full items-center gap-16 relative z-20">
+          <div className="flex flex-col items-center w-full gap-2">
+            <div className="w-full relative font-segoe text-center text-blue-950 font-bold text-[32px]">
+              <h1>Empowering Students, Shaping the future</h1>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-4 w-full items-center justify-center">
+            <img className="w-[45%]" src="/images/pill-1.png" alt="text-pill" />
+            <img className="w-[45%]" src="/images/pill-2.png" alt="text-pill" />
+            <img className="w-[45%]" src="/images/pill-3.png" alt="text-pill" />
+          </div>
+          <div className="flex flex-col w-full items-center gap-6">
+            <h3 className="text-[20px] text-center">
+              Join the{" "}
+              <span className="text-blue-600">
+                Microsoft Learn Student Ambassadors, Unilag
+              </span>
+            </h3>
+            <button className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 px-[1.5rem] py-[1rem] text-btn rounded-[10px] text-white">
+              <span>Join Community</span>
+              <img
+                src="/icons/arrow-up-right.svg"
+                alt=""
+                className="w-[20px]"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

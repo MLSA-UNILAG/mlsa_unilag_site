@@ -64,6 +64,13 @@
   background-repeat: no-repeat;
 }
 
+.mobile-hero {
+  background-image: url("/images/mobile-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 2560px) {
   .text-header {
     font-size: 72px;
