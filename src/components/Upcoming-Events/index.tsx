@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "react-splide-ts";
 import { Options } from "@splidejs/splide";
 import styles from "./events.module.css";
-import "@splidejs/react-splide/css";
+import "react-splide-ts/css";
 
 interface EventData {
   event: string;
@@ -78,9 +78,8 @@ export default function UpcomingEvents() {
   const options: Options = {
     type: "slide",
     gap: "1rem",
-    resetProgress: false,
     perPage: 1,
-    // height: "80%",
+    height: "100vh",
     mediaQuery: "min",
     breakpoints: {
       768: {
@@ -88,6 +87,10 @@ export default function UpcomingEvents() {
       },
       1024: {
         perPage: 3,
+        height: "80vh",
+      },
+      1440: {
+        height: "60vh",
       },
     },
     width: "99vw",
@@ -95,7 +98,6 @@ export default function UpcomingEvents() {
     focus: 0,
     arrows: false,
     pagination: false,
-    pauseOnFocus: true,
     perMove: 1,
     keyboard: true,
     updateOnMove: true,
@@ -116,7 +118,7 @@ export default function UpcomingEvents() {
         options={options}
         hasTrack={false}
         ref={splideRef}
-        className="px-6 h-2/3 lg:h-4/5"
+        className="px-6"
       >
         <SplideTrack>
           {carouselData.map((datum) => (
@@ -192,7 +194,7 @@ const SlideContainer = ({ datum }: { datum: EventData }) => (
 const SlideControls = ({
   splideRef,
 }: {
-  splideRef: React.MutableRefObject<Splide>;
+  splideRef: React.MutableRefObject<Splide> | React.RefObject<Splide>;
 }) => (
   <div className="flex w-full justify-center md:justify-end mt-12 md:mt-4 px-6 items-center gap-x-4">
     <button
