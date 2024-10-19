@@ -196,7 +196,7 @@ const SlideControls = ({
 }: {
   splideRef: React.MutableRefObject<Splide> | React.RefObject<Splide>;
 }) => (
-  <div className="flex w-full justify-center md:justify-end mt-12 md:mt-4 px-6 items-center gap-x-4">
+  <div className="flex w-full justify-center lg:justify-end mt-12 md:mt-4 px-6 items-center gap-x-4">
     <button
       type="button"
       aria-label="Previous slide"
