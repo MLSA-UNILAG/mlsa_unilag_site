@@ -57,7 +57,7 @@ const opportunities: LinkProps[] = [
 export default function Footer() {
   return (
     <footer className="bg-footer w-full px-12 py-8 xl:px-20 xl:py-16">
-      <div className="flex flex-col xl:flex-row gap-x-12 2xl:gap-x-[62px]">
+      <div className="flex flex-col xl:flex-row gap-x-12 2xl:gap-x-[62px] max-w-[1440px] mx-auto">
         <Card />
         <FooterColumns />
       </div>
