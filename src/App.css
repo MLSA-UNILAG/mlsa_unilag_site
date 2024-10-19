@@ -70,6 +70,13 @@
   background-repeat: no-repeat;
 }
 
+.mobile-hero {
+  background-image: url("/images/mobile-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 2560px) {
   .text-header {
     font-size: 72px;
@@ -88,6 +95,12 @@
   }
 }
 
+@media (max-width: 2559px) and (min-width: 1365px)  {
+  .text-header {
+    font-size: 48px;
+  }
+
+=======
 .splide__slide .slide-container {
   padding: 1.5rem;
   padding-top: 0;
