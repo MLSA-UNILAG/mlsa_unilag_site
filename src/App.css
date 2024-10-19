@@ -48,17 +48,23 @@
 }
 
 @keyframes floater {
-  0%{transform: translateY(-10%); transition: ease .5s}
-  50%{transform: translateY(10%); transition: ease .5s}
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.5s;
+  }
 }
 
-.float{
-  transition: ease .5s;
+.float {
+  transition: ease 0.5s;
   transform: translateY(-10%);
   animation: floater 1.5s infinite;
 }
 
-.hero-bg{
+.hero-bg {
   background-image: url("/images/hero-image-mask-group.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -80,4 +86,47 @@
   .logo-img {
     width: 150px;
   }
+}
+
+.splide__slide div.slide-container {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.splide__slide div.slide-image-container img {
+  @apply  w-[484px] aspect-square;
+}
+
+.splide__slide div.slide-data,
+.splide__slide div.slide-stats {
+  visibility: hidden;
+}
+
+.splide__slide.is-active div.slide-container {
+  box-shadow: 5.1px 10.2px 30.6px 0px #34115a0d;
+  background-color: white;
+  padding-top: 1.5rem;
+}
+
+.splide__slide.is-active div.slide-image-container img {
+  @apply w-full aspect-[436/193];
+}
+
+.splide__slide.is-active div.slide-data,
+.splide__slide.is-active div.slide-stats {
+  visibility: visible;
+}
+
+.splide__slide.is-active div.slide-data {
+  display: grid;
+}
+
+.splide__slide.is-active div.slide-stats {
+  display: flex;
 }
