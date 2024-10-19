@@ -120,7 +120,7 @@
 .splide__slide.is-active .slide-image-container img {
   transition: all 0.3s ease;
   width: 100%;
-  aspect-ratio: 436 / 193;
+  aspect-ratio: 436 / 200;
 }
 
 .splide__slide.is-active .slide-data,
