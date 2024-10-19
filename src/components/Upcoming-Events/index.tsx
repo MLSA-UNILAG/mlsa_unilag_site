@@ -11,64 +11,50 @@ interface EventData {
   month: string;
   time?: string;
   location?: string;
+  event_image?: string;
+  register_link?: string;
 }
 
 const carouselData: EventData[] = [
-  {
-    event: "Games Night",
-    dateTime: "2024-04-19",
-    day: "19",
-    month: "Apr",
-    time: "8pm WAT",
-    location: "Whatsapp Group",
-  },
   {
     event: "MLSA x SWYI Community Outreach Initiative",
     dateTime: "2024-04-28",
     day: "28",
     month: "Apr",
-    time: "",
+    time: "9am WAT",
     location: "Makoko",
+    event_image: "/images/mlsaxswyi.jpg",
+    register_link: "https://forms.office.com/r/zjSSQzVctj"
   },
   {
-    event: "Spotlight Session",
-    dateTime: "2024-05-17",
-    day: "17",
-    month: "May",
+    event: "Microsoft Build Watch Party",
+    dateTime: "2023-04-12",
+    day: "12",
+    month: "April",
     time: "12pm WAT",
-    location: "Microsoft Teams",
-  },
-  {
-    event: "Games Night",
-    dateTime: "2024-05-24",
-    day: "24",
-    month: "May",
-    time: "8pm WAT",
-    location: "Whatsapp Group",
-  },
-  {
-    event: "Spotlight Session",
-    dateTime: "2024-05-25",
-    day: "25",
-    month: "May",
-    time: "11am WAT",
-    location: "Microsoft Teams",
+    location: "NITHUB, Beside Faculty of Social Sciences",
+    event_image: "/images/watch_party.JPG",
+    register_link: "https://forms.office.com/r/6n6NBjFh92"
   },
   {
     event: "An Introduction to the VinuChain Blockchain System",
     dateTime: "2024-06-22",
     day: "22",
     month: "Jun",
-    time: "",
-    location: "",
+    time: "11am WAT",
+    location: "RM 255, Faculty of Engineering",
+    event_image: "/images/Vinuchain.jpg",
+    register_link: "https://forms.office.com/r/6n6NBjFh92"
   },
   {
     event: "Health ‘n Tech Fest",
-    dateTime: "2024-06-29",
-    day: "29",
-    month: "Jun",
-    time: "",
-    location: "",
+    dateTime: "2024-11-23",
+    day: "23",
+    month: "Nov",
+    time: "11am WAT",
+    location: "Unilag Campus",
+    event_image: "/images/hntf.jpg",
+    register_link: "https://forms.office.com/r/8d1hxssB26"
   },
 ];
 
@@ -107,7 +93,7 @@ export default function UpcomingEvents() {
     <section className={styles.bg}>
       <div className="mb-20">
         <h2 className="carousel-header text-blue-600 font-medium mb-4 text-4xl text-center leading-[54px]">
-          Upcoming Events
+          Events
         </h2>
         <p className="text-neutral-950 text-center text-3xl leading-8">
           Checkout our upcoming events and programs
@@ -137,7 +123,7 @@ const SlideContainer = ({ datum }: { datum: EventData }) => (
   <div className="slide-container w-full">
     <div className="slide-image-container mb-6">
       <img
-        src="/images/guy-amebo.png"
+        src={datum.event_image}
         alt="Event Poster"
         className="rounded-3xl"
       />
@@ -182,7 +168,9 @@ const SlideContainer = ({ datum }: { datum: EventData }) => (
       <button
         type="button"
         className={styles.registerbtn}
-        onClick={() => alert("Successful")}
+        onClick={
+          () => window.open(datum.register_link, '_blank')
+        }
       >
         <span>Register&nbsp;now</span>
         <RegisterNow />

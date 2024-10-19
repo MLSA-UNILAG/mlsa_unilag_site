@@ -3,10 +3,10 @@ import { SpotLight } from "@/types/spotlightType";
 const Spotlight = () => {
   const spotlightElements: SpotLight[] = [
     {
-      picture: "/images/lady-yellow-potrait.png",
+      picture: "/images/Samuel.jpeg",
       name: "Samuel Bamgola",
       role: "Gold Ambassador",
-      link: "#",
+      link: "https://www.linkedin.com/in/samuelbamgbola/",
     },
     {
       picture: "/images/lady-yellow-potrait.png",
@@ -16,16 +16,40 @@ const Spotlight = () => {
     },
     {
       picture: "/images/lady-yellow-potrait.png",
-      name: "Emeka Aladimma",
-      role: "Alpha Ambassador",
+      name: "Olatunbosun ",
+      role: "Community Management Lead",
       link: "#",
     },
+    {
+      picture: "/images/lady-yellow-potrait.png",
+      name: "Debola",
+      role: "Events Team Lead",
+      link: "#",
+    },
+    {
+      picture: "/images/lady-yellow-potrait.png",
+      name: "Emeka Aladimma",
+      role: "Tutors Team Lead",
+      link: "#",
+    },
+    {
+      picture: "/images/lady-yellow-potrait.png",
+      name: "Abdulbasit",
+      role: "Design Team Lead",
+      link: "#",
+    },
+    {
+      picture: "/images/lady-yellow-potrait.png",
+      name: "Dolapo",
+      role: "CMUL Lead",
+      link: "#",
+    }
   ];
 
   return (
     <div className="mt-[6rem] mb-[3rem] flex flex-col items-center">
       <h3 className="text-blue-600 text-[2rem] 3xl:text-[3rem] text-center font-medium pb-3">
-        Community Spotlight
+        Core Team Members
       </h3>
       <span className="w-full flex justify-center text-center text-[1.2rem] 3xl:text-[1.5rem]">
         Our Community members presently setting the pace in the tech industry
