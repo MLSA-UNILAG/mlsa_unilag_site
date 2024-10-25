@@ -4,46 +4,46 @@ const Spotlight = () => {
   const spotlightElements: SpotLight[] = [
     {
       picture: "/images/Samuel.jpeg",
-      name: "Samuel Bamgola",
+      name: "Samuel Bamgbola",
       role: "Gold Ambassador",
       link: "https://www.linkedin.com/in/samuelbamgbola/",
     },
     {
-      picture: "/images/lady-yellow-potrait.png",
+      picture: "/images/L.png",
       name: "Paul Asalu",
       role: "Beta Ambassador",
-      link: "#",
+      link: "https://www.linkedin.com/in/paul-asalu-7a414b186/",
     },
     {
-      picture: "/images/lady-yellow-potrait.png",
-      name: "Olatunbosun ",
+      picture: "/images/bosun.jpg",
+      name: "Olatunbosun Ayinla",
       role: "Community Management Lead",
-      link: "#",
+      link: "http://linkedin.com/in/olatunbosun-alli-balogun",
     },
     {
-      picture: "/images/lady-yellow-potrait.png",
-      name: "Debola",
+      picture: "/images/debola.jpg",
+      name: "Debola Oyeniran",
       role: "Events Team Lead",
-      link: "#",
+      link: "https://www.linkedin.com/in/adebola-oyeniran",
     },
     {
-      picture: "/images/lady-yellow-potrait.png",
+      picture: "/images/acel01.jpg",
       name: "Emeka Aladimma",
       role: "Tutors Team Lead",
-      link: "#",
+      link: "https://www.linkedin.com/in/acel",
     },
     {
-      picture: "/images/lady-yellow-potrait.png",
-      name: "Abdulbasit",
+      picture: "/images/basit.jpg",
+      name: "Abdulbasit Adesokan",
       role: "Design Team Lead",
-      link: "#",
-    },
-    {
-      picture: "/images/lady-yellow-potrait.png",
-      name: "Dolapo",
-      role: "CMUL Lead",
-      link: "#",
+      link: "https://www.linkedin.com/in/abdulbasitade",
     }
+    // {
+    //   picture: "/images/lady-yellow-potrait.png",
+    //   name: "Dolapo",
+    //   role: "CMUL Lead",
+    //   link: "#",
+    // }
   ];
 
   return (
@@ -94,7 +94,7 @@ const Spotlight = () => {
         </div>
       </div>
 
-      <div className="flex justify-center py-[1rem]">
+      {/* <div className="flex justify-center py-[1rem]">
         <button className="flex items-center w-fit font-medium bg-gradient-to-r from-purple-600 to-purple-500 px-[1.5rem] py-[1rem] rounded-[10px] text-white text-[1rem] 3xl:text-[1.5rem]">
           <span>View more</span>
           <img
@@ -103,7 +103,7 @@ const Spotlight = () => {
             className="w-[20px] 3xl:w-[40px]"
           />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

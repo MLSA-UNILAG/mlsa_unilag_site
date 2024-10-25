@@ -13,6 +13,7 @@ interface EventData {
   location?: string;
   event_image?: string;
   register_link?: string;
+  attendance?: number;
 }
 
 const carouselData: EventData[] = [
@@ -24,7 +25,8 @@ const carouselData: EventData[] = [
     time: "9am WAT",
     location: "Makoko",
     event_image: "/images/mlsaxswyi.jpg",
-    register_link: "https://forms.office.com/r/zjSSQzVctj"
+    register_link: "https://forms.office.com/r/zjSSQzVctj",
+    attendance: 50
   },
   {
     event: "Microsoft Build Watch Party",
@@ -34,7 +36,8 @@ const carouselData: EventData[] = [
     time: "12pm WAT",
     location: "NITHUB, Beside Faculty of Social Sciences",
     event_image: "/images/watch_party.JPG",
-    register_link: "https://forms.office.com/r/6n6NBjFh92"
+    register_link: "https://forms.office.com/r/6n6NBjFh92",
+    attendance: 100
   },
   {
     event: "An Introduction to the VinuChain Blockchain System",
@@ -44,7 +47,8 @@ const carouselData: EventData[] = [
     time: "11am WAT",
     location: "RM 255, Faculty of Engineering",
     event_image: "/images/Vinuchain.jpg",
-    register_link: "https://forms.office.com/r/6n6NBjFh92"
+    register_link: "https://forms.office.com/r/6n6NBjFh92",
+    attendance: 150
   },
   {
     event: "Health ‘n Tech Fest",
@@ -54,7 +58,8 @@ const carouselData: EventData[] = [
     time: "11am WAT",
     location: "Unilag Campus",
     event_image: "/images/hntf.jpg",
-    register_link: "https://forms.office.com/r/8d1hxssB26"
+    register_link: "https://forms.office.com/r/8d1hxssB26",
+    attendance: 140
   },
 ];
 
@@ -96,7 +101,7 @@ export default function UpcomingEvents() {
           Events
         </h2>
         <p className="text-neutral-950 text-center text-3xl leading-8">
-          Checkout our upcoming events and programs
+          Checkout our past, ongoing and upcoming activities.
         </p>
       </div>
       <Splide
@@ -162,7 +167,7 @@ const SlideContainer = ({ datum }: { datum: EventData }) => (
       <span className="inline-flex gap-x-1 items-center">
         <PeopleIconRow />
         <span className="text-neutral-950 min-[1560px]:text-lg min-[1560px]:leading-[150%]">
-          300+&nbsp;registered
+          {datum.attendance}+&nbsp;registered
         </span>
       </span>
       <button

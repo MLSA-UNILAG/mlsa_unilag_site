@@ -7,12 +7,12 @@ const quickLinks: LinkProps[] = [
     link: "/",
     external: false,
   },
-  {
-    key: "resources",
-    text: "Resources",
-    link: "/resources",
-    external: false,
-  },
+  // {
+  //   key: "resources",
+  //   text: "Resources",
+  //   link: "/resources",
+  //   external: false,
+  // },
   {
     key: "events",
     text: "Events",
@@ -28,27 +28,27 @@ const quickLinks: LinkProps[] = [
 ];
 
 const opportunities: LinkProps[] = [
-  {
-    key: "volunteer",
-    text: "Volunteer",
-    link: "/volunteer",
-    external: false,
-  },
-  {
-    key: "contribute",
-    text: "Contribute",
-    link: "/contribute",
-    external: false,
-  },
-  {
-    key: "spotlight",
-    text: "Spotlight",
-    link: "/spotlight",
-    external: false,
-  },
+  // {
+  //   key: "volunteer",
+  //   text: "Volunteer",
+  //   link: "/volunteer",
+  //   external: false,
+  // },
+  // {
+  //   key: "contribute",
+  //   text: "Contribute",
+  //   link: "/contribute",
+  //   external: false,
+  // },
+  // {
+  //   key: "spotlight",
+  //   text: "Spotlight",
+  //   link: "/spotlight",
+  //   external: false,
+  // },
   {
     key: "ambassadors",
-    text: "Ambassadors",
+    text: "Become an Ambassador",
     link: "https://mvp.microsoft.com/studentambassadors",
     external: true,
   },
