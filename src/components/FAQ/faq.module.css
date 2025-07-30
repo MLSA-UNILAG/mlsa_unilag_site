@@ -1,5 +1,5 @@
 .FAQContainer {
-  @apply rounded-2xl p-9 bg-white shadow-[4px_8px_24px_0_rgba(52,17,90,0.05)];
+  @apply rounded-2xl p-4 bg-white shadow-[4px_8px_24px_0_rgba(52,17,90,0.05)];
 }
 
 .FAQContent {

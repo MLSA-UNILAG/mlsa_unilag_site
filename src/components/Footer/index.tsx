@@ -1,4 +1,7 @@
 import styles from "./footer.module.css";
+import arrowUpRightWhite from "@/assets/icons/arrow-up-right-white.svg";
+import instagram from "@/assets/icons/instagram.svg";
+import x from "@/assets/icons/x.svg";
 
 const quickLinks: LinkProps[] = [
   {
@@ -62,7 +65,7 @@ export default function Footer() {
         <FooterColumns />
       </div>
       <p className="pt-8 xl:pt-12 font-normal text-white text-center text-sm md:text-lg md:leading-7">
-        © 2024 MLSA UNILAG All right reserved
+        © {new Date().getFullYear()} MLSA UNILAG All right reserved
       </p>
     </footer>
   );
@@ -91,15 +94,15 @@ function Card() {
             href="https://forms.office.com/pages/responsepage.aspx?id=oBzDhDusrk6tEVGdgCM-b2rhIZyiDIRMq6jycZEfjHlUQUVUU0REQTFCSE40WlFKVjlKU0JaWUxMRi4u"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex items-center gap-x-1 bg-footer w-fit"
+            className="rounded-2xl py-4 px-4 md:px-6 mt-9 flex justify-center items-center gap-x-1 bg-footer w-full"
           >
-            <span className="text-white font-normal text-base md:text-[22px] md:leading-8">
+            <span className="text-white font-semibold text-base md:text-[22px] md:leading-8">
               Join Community
             </span>
             <img
-              src="/icons/arrow-top-right.svg"
+              src={arrowUpRightWhite}
               alt="Join Community Icon"
-              className="size-4 md:size-6 img-white-filter"
+              className=""
             />
           </a>
         </div>
@@ -118,12 +121,12 @@ function FooterColumns() {
         <div className="flex gap-x-2">
           <SocialMediaLink
             link="https://x.com/mlsa_unilag"
-            image="/icons/twitter-logo.svg"
+            image={x}
             alt="Twitter"
           />
           <SocialMediaLink
             link="https://www.instagram.com/mlsa_unilag"
-            image="/icons/instagram-logo.svg"
+            image={instagram}
             alt="Instagram"
           />
         </div>
@@ -176,9 +179,9 @@ function Link({ text, link, external = false }: LinkProps) {
     >
       <span className={styles.FooterLinkTitle}>{text}</span>
       <img
-        src="/icons/arrow-top-right.svg"
+        src={arrowUpRightWhite}
         alt="Arrow Icon"
-        className="size-4 md:size-6 img-white-filter"
+        className="size-5 md:size-6"
       />
     </a>
   );
@@ -201,7 +204,7 @@ function SocialMediaLink({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={image} alt={alt} className={styles.SocialMediaImage} />
+      <img src={image} alt={alt} className="p-2" />
     </a>
   );
 }
