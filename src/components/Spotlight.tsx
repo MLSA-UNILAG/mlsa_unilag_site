@@ -1,4 +1,5 @@
 import { SpotLight } from "@/types/spotlightType";
+import arrowUpPurple from "@/assets/icons/arrow-up-right-purple.svg";
 
 const Spotlight = () => {
   const spotlightElements: SpotLight[] = [
@@ -37,7 +38,7 @@ const Spotlight = () => {
       name: "Abdulbasit Adesokan",
       role: "Design Team Lead",
       link: "https://www.linkedin.com/in/abdulbasitade",
-    }
+    },
     // {
     //   picture: "/images/lady-yellow-potrait.png",
     //   name: "Dolapo",
@@ -48,7 +49,7 @@ const Spotlight = () => {
 
   return (
     <div className="mt-[6rem] mb-[3rem] flex flex-col items-center">
-      <h3 className="text-blue-600 text-[2rem] 3xl:text-[3rem] text-center font-medium pb-3">
+      <h3 className="text-blue-600 text-[2rem] 3xl:text-[3rem] text-center font-semibold pb-3">
         Core Team Members
       </h3>
       <span className="w-full flex justify-center text-center text-[1.2rem] 3xl:text-[1.5rem]">
@@ -56,9 +57,12 @@ const Spotlight = () => {
       </span>
 
       <div className="flex w-full justify-center">
-        <div className="mt-[7rem] mb-[3rem] flex flex-wrap items-center justify-center w-full gap-y-20 max-w-[3/4] gap-x-3 min-[770px]:gap-x-6">
-          {spotlightElements.map((person: SpotLight) => (
-            <div className="bg-white rounded-xl shadow-md w-[220px] lg:w-[270px] xl:w-[250px] 3xl:w-[15vw] flex flex-col items-center justify-between">
+        <div className="mt-[7rem] mb-[3rem] flex flex-wrap items-center justify-center w-full gap-y-20 max-w-[800px] gap-x-3 min-[770px]:gap-x-6 ">
+          {spotlightElements.map((person: SpotLight, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-xl shadow-md w-[270px] lg:w-[250px] 3xl:w-[15vw] flex flex-col items-center justify-between"
+            >
               <div className="w-full flex justify-center">
                 <img
                   src={person.picture}
@@ -67,11 +71,11 @@ const Spotlight = () => {
                 />
               </div>
               <div>
-                <div className="flex flex-col gap-2 mt-4">
-                  <h4 className="text-center font-medium text-[1.3rem] 3xl:text-[1.8rem]">
+                <div className="flex flex-col gap-2 mt-4 px-4">
+                  <h4 className="text-center font-semibold text-[1.3rem] 3xl:text-[1.8rem]">
                     {person.name}
                   </h4>
-                  <span className="flex justify-center 3xl:text-[1.3rem]">
+                  <span className="flex justify-center text-center 3xl:text-[1.3rem]">
                     {person.role}
                   </span>
                 </div>
@@ -80,11 +84,7 @@ const Spotlight = () => {
                   <a href={person.link}>
                     <button className="flex items-center text-purple-700 3xl:text-[1.3rem]">
                       <span>View Profile</span>
-                      <img
-                        src="/icons/arrow-up-right-purple.svg"
-                        alt=""
-                        className="w-[20px]"
-                      />
+                      <img src={arrowUpPurple} alt="" className="w-[20px]" />
                     </button>
                   </a>
                 </div>

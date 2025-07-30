@@ -1,4 +1,6 @@
+import { useState } from "react";
 import styles from "./faq.module.css";
+import { twMerge } from "tailwind-merge";
 
 type FAQ = {
   key?: number;
@@ -85,7 +87,7 @@ const FAQContent: FAQ[] = [
 export default function FAQ() {
   return (
     <section className="py-8 md:py-16 px-4 md:px-12 xl:px-20 min-[1440px]:px-0 max-w-[1440px] mx-auto">
-      <h2 className="mb-4 text-center text-blue-600 text-2xl md:text-4xl font-bold">
+      <h2 className="mb-4 text-center text-blue-600 text-2xl md:text-4xl font-semibold">
         FAQs
       </h2>
       <p className="mb-12 text-neutral-950 text-center text-base md:text-3xl">
@@ -106,20 +108,38 @@ export default function FAQ() {
 }
 
 function FAQDetail({ question, answer }: FAQ) {
+  const [isFAQOpened, setIsFAQOpened] = useState(false);
   return (
     <div className={styles.FAQContainer}>
-      <details className="text-neutral-950 cursor-pointer w-full text-3xl max-w-full overflow-hidden group">
-        <summary className="w-full list-none block marker:hidden  ">
+      <details
+        className="text-neutral-950 cursor-pointer w-full max-w-full overflow-hidden group"
+        onClick={() => setIsFAQOpened(!isFAQOpened)}
+      >
+        <summary className="w-full list-none block marker:hidden">
           <div className="inline-flex w-full items-center justify-between">
-            <div className="inline-flex items-center gap-x-6">
+            <div className="inline-flex items-center gap-x-6 font-semibold">
               <IconHelpCircle />
               {question}
             </div>
-            <IconChevronUp className="transform transition-all duration-300 group-open:rotate-180 group-hover:scale-150" />
+            <button>
+              <IconChevronUp
+                className={twMerge(
+                  "transform transition-all rotate-180 duration-300 ml-2 lg:group-hover:scale-150",
+                  isFAQOpened && "rotate-0"
+                )}
+              />
+            </button>
           </div>
         </summary>
       </details>
-      <div className={`md:ml-12 ${styles.FAQContent}`}>{answer}</div>
+      <div
+        className={twMerge(
+          "md:ml-12 max-h-0 overflow-hidden transition-[max-height,padding] duration-500",
+          isFAQOpened && "max-h-[200px] py-4"
+        )}
+      >
+        {answer}
+      </div>
     </div>
   );
 }

@@ -26,7 +26,7 @@
 @font-face {
   font-family: "Segoe";
   font-weight: 600;
-  src: local("Segoe"), url("/fonts/ClashDisplaySemibold.otf") format("opentype");
+  src: local("Segoe"), url("/fonts/SegoeUISemibold.ttf") format("opentype");
 }
 @font-face {
   font-family: "Segoe";
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 2559px) and (min-width: 1365px)  {
+@media (max-width: 2559px) and (min-width: 1365px) {
   .text-header {
     font-size: 48px;
   }
